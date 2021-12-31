@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@font-face {
+  font-family: 'cocogoose';
+  src: url(fonts/cocogoose-pro.regular.ttf);
+}
+
 h1 {
   color: red;
+  font-family: 'cocogoose', sans-serif;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
 }
