@@ -15,6 +15,7 @@ html {
 }
 
 header {
+  display: -webkit-box;
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
