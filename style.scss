@@ -168,7 +168,7 @@ header {
 
 #artists {
   .artists {
-    background-color: $secondaryColor;
+    background-color: white;
 
     h3.underline-small {
       text-transform: capitalize;
@@ -208,7 +208,7 @@ header {
       content: '';
       height: 0.2em;
       width: 50%;
-      background: white;
+      background: $secondaryColor;
       position: absolute;
       left: 0;
       bottom: -5px;
@@ -218,5 +218,102 @@ header {
       font-family: $secondaryFont;
       font-size: 1rem;
     }
+
+    .more-text {
+      display: none;
+    }
+
+    .more-text.show {
+      display: inline;
+    }
+
+    .btn-more {
+      img {
+        width: 5%;
+        padding: 0.2em;
+        color: white;
+      }
+    }
+  }
+}
+// footer
+
+footer {
+  background-color: $secondaryColor;
+
+  a.logo {
+    font-family: $primaryFont;
+    font-size: 1.4rem;
+  }
+
+  span.footer-text {
+    font-family: $secondaryFont;
+    font-weight: bold;
+  }
+
+  i {
+    font-size: $iconSize;
+    padding: 0.2em;
+    color: $primaryColor;
+  }
+}
+
+//  About page
+
+#umuhanzi {
+  h3.underline-small {
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.2em;
+    color: $primaryColor;
+  }
+
+  .underline-small::after {
+    content: '';
+    height: 0.15em;
+    width: 15%;
+    background: #f24432;
+    position: absolute;
+    left: calc(50% - 9%);
+    bottom: -5px;
+  }
+}
+
+#festival {
+  h3.underline-small {
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.2em;
+    color: $primaryColor;
+  }
+
+  .underline-small::after {
+    content: '';
+    height: 0.15em;
+    width: 15%;
+    background: #f24432;
+    position: absolute;
+    left: calc(50% - 9%);
+    bottom: -5px;
+  }
+
+  padding: 1.5em 0;
+
+  img {
+    max-width: 100%;
+  }
+
+  .showcase-text {
+    margin-bottom: 0.5em;
+    border: 0.4em solid $containerBorder;
+    background-color: $containerBg;
+  }
+
+  p.main-paragraph {
+    font-family: $secondaryFont;
+    font-size: $paragraphSize;
+    color: $primaryColor;
   }
 }

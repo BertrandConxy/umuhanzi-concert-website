@@ -16,6 +16,7 @@ html {
 
 header {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -117,6 +118,7 @@ header i.menu-btn {
 
 #schedule .schedule-card {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 0.5em;
   -webkit-box-align: center;
@@ -159,7 +161,7 @@ header i.menu-btn {
 }
 
 #artists .artists {
-  background-color: #d3d3d3;
+  background-color: white;
 }
 
 #artists .artists h3.underline-small {
@@ -200,7 +202,7 @@ header i.menu-btn {
   content: '';
   height: 0.2em;
   width: 50%;
-  background: white;
+  background: #d3d3d3;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -209,4 +211,94 @@ header i.menu-btn {
 #artists .artists p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
+}
+
+#artists .artists .more-text {
+  display: none;
+}
+
+#artists .artists .more-text.show {
+  display: inline;
+}
+
+#artists .artists .btn-more img {
+  width: 5%;
+  padding: 0.2em;
+  color: white;
+}
+
+footer {
+  background-color: #d3d3d3;
+}
+
+footer a.logo {
+  font-family: "cocogoose", sans-serif;
+  font-size: 1.4rem;
+}
+
+footer span.footer-text {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+footer i {
+  font-size: 2rem;
+  padding: 0.2em;
+  color: #272a31;
+}
+
+#umuhanzi h3.underline-small {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.2em;
+  color: #272a31;
+}
+
+#umuhanzi .underline-small::after {
+  content: '';
+  height: 0.15em;
+  width: 15%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 9%);
+  bottom: -5px;
+}
+
+#festival {
+  padding: 1.5em 0;
+}
+
+#festival h3.underline-small {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.2em;
+  color: #272a31;
+}
+
+#festival .underline-small::after {
+  content: '';
+  height: 0.15em;
+  width: 15%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 9%);
+  bottom: -5px;
+}
+
+#festival img {
+  max-width: 100%;
+}
+
+#festival .showcase-text {
+  margin-bottom: 0.5em;
+  border: 0.4em solid #f7f3f3;
+  background-color: #e4e4e4;
+}
+
+#festival p.main-paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #272a31;
 }
