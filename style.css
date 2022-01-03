@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 @font-face {
   font-family: 'cocogoose';
   src: url(fonts/cocogoose-pro.regular.ttf);
@@ -7,7 +6,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -19,8 +18,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 header a.logo {
@@ -43,7 +42,7 @@ header i.menu-btn {
   opacity: 0.15;
   z-index: -1;
   -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 #showcase {
@@ -122,14 +121,14 @@ header i.menu-btn {
   display: flex;
   padding: 0 0.5em;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 8px;
   background-color: rgba(87, 87, 87, 0.5);
   margin: 0.8em 0;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 95%;
 }
 
@@ -302,3 +301,96 @@ footer i {
   font-size: 1rem;
   color: #272a31;
 }
+
+#other-projects {
+  background-color: grey;
+}
+
+#other-projects h3.underline-small {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.2em;
+  color: #272a31;
+}
+
+#other-projects .underline-small::after {
+  content: '';
+  height: 0.15em;
+  width: 15%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 9%);
+  bottom: -5px;
+}
+
+#other-projects .project-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#other-projects .project-img .overlay {
+  background-color: #ec5242;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#other-projects .project-img h3, #other-projects .project-img span {
+  z-index: 1111;
+}
+
+#other-projects .project-img h3 {
+  font-family: "cocogoose", sans-serif;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+#other-projects .project-img span {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#other-projects .project-img:nth-child(1) {
+  background: url("images/iwacu-muzika2.jpg") 0 0 no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  color: #f8f8f8;
+}
+
+#other-projects .project-img:nth-child(2) {
+  background: url("images/kigali-fiesta.jpg") 0 0 no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+#other-projects .project-img:nth-child(3) {
+  background: url("images/homepage-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */

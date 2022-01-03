@@ -4,5 +4,10 @@ const moreArtists = document.querySelector('.more-text');
 
 moreButton. addEventListener('click', (e)=> {
     moreArtists.classList.toggle('show');
-    moreButton.style.display = 'none';
+    if (moreButton.innerHTML === 'MORE <img src="/images/angle-down-solid.svg" alt=" ">') {
+        moreButton.innerHTML = 'LESS <img src="/images/angle-up-solid.svg" alt=" ">'
+    } else
+    {
+        moreButton.innerHTML = 'MORE <img src="/images/angle-down-solid.svg" alt=" ">';
+    }
 })
