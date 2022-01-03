@@ -11,7 +11,6 @@
 
 html {
   font-size: 16px;
-  margin: 0.5em 1em;
 }
 
 // declaration of variables
@@ -22,23 +21,12 @@ $headingColor: #ec5242;
 $headingSize: 2.5rem;
 $heading2Size: 1.5rem;
 $paragraphSize: 1rem;
-$iconSize: 0.6rem;
+$iconSize: 2rem;
 $primaryFont: 'cocogoose', sans-serif;
 $secondaryFont: 'Lato', sans-serif;
+$containerBg: rgb(228, 228, 228);
+$containerBorder: rgb(247, 243, 243);
 
-body::before {
-  background: url(/images/homepage-bg2.jpg);
-  content: "";
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.13;
-  filter: grayscale(100%);
-  
-}
 // navigation bar
 
 header {
@@ -53,15 +41,29 @@ header {
     font-size: 4rem;
   }
 }
+// First section
+#showcase::before {
+  background: url(/images/homepage-bg3.jpg);
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+  filter: grayscale(50%);
+}
 
 #showcase {
   margin-top: 3rem;
+  height: 79vh;
 
   q {
     font-family: $secondaryFont;
     color: $headingColor;
     font-size: 1.5rem;
-
   }
 
   h1 {
@@ -70,16 +72,14 @@ header {
     font-size: $headingSize;
     background-image: url(/images/header-bg.jpg);
     background-size: cover;
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
   }
 
   .showcase-text {
     margin-bottom: 0.5em;
-    border: 0.4em solid rgb(247, 243, 243);
-    background-color: rgb(255, 255, 255);
+    border: 0.4em solid $containerBorder;
+    background-color: $containerBg;
   }
 
   p.main-paragraph {
@@ -87,7 +87,6 @@ header {
     font-size: $paragraphSize;
     color: $primaryColor;
     font-weight: 600;
-
   }
 
   span.showcase-slogan {
@@ -101,7 +100,123 @@ header {
     color: $primaryColor;
     font-size: 1rem;
     font-weight: 600;
-
   }
 }
+// Second section
 
+#schedule {
+  background-color: $primaryColor;
+  padding: 3em 0.5em;
+
+  h3.underline-small {
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5em;
+    color: white;
+  }
+
+  .underline-small::after {
+    content: '';
+    height: 0.15em;
+    width: 15%;
+    background: #f24432;
+    position: absolute;
+    left: calc(50% - 9%);
+    bottom: -5px;
+  }
+
+  .schedule-card {
+    display: flex;
+    padding: 0 0.5em;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(87, 87, 87, 0.5);
+    margin: 0.8em 0;
+    justify-content: center;
+    width: 95%;
+
+    i {
+      color: $primaryColor;
+      font-size: $iconSize;
+    }
+
+    h4 {
+      color: $headingColor;
+      font-family: $secondaryFont;
+      font-size: $heading2Size;
+      font-weight: bold;
+    }
+
+    p {
+      color: white;
+    }
+  }
+
+  .btn-schedule {
+    background-color: $headingColor;
+    font-family: $secondaryFont;
+    font-size: 1.3rem;
+    padding: 1.6em;
+  }
+
+  .btn-schedule:hover {
+    background-color: #f09186;
+  }
+}
+// Third section
+
+#artists {
+  .artists {
+    background-color: $secondaryColor;
+
+    h3.underline-small {
+      text-transform: capitalize;
+      text-align: center;
+      position: relative;
+      padding-bottom: 0.5em;
+      color: $primaryColor;
+    }
+
+    .underline-small::after {
+      content: '';
+      height: 0.15em;
+      width: 15%;
+      background: #f24432;
+      position: absolute;
+      left: calc(50% - 9%);
+      bottom: -5px;
+    }
+
+    .artist-description {
+      margin-left: 1em;
+    }
+
+    .artist {
+      max-width: 100%;
+      height: auto;
+    }
+
+    i {
+      position: relative;
+      font-family: $secondaryFont;
+      color: $headingColor;
+      padding-bottom: 0.5em;
+    }
+
+    i.underline-small2::after {
+      content: '';
+      height: 0.2em;
+      width: 50%;
+      background: white;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+    }
+
+    p {
+      font-family: $secondaryFont;
+      font-size: 1rem;
+    }
+  }
+}

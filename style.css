@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 @font-face {
   font-family: 'cocogoose';
   src: url(fonts/cocogoose-pro.regular.ttf);
@@ -6,35 +7,18 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
-  margin: 0.5em 1em;
-}
-
-body::before {
-  background: url(/images/homepage-bg2.jpg);
-  content: "";
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.13;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 header a.logo {
@@ -45,8 +29,24 @@ header i.menu-btn {
   font-size: 4rem;
 }
 
+#showcase::before {
+  background: url(/images/homepage-bg3.jpg);
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
 #showcase {
   margin-top: 3rem;
+  height: 79vh;
 }
 
 #showcase q {
@@ -61,7 +61,6 @@ header i.menu-btn {
   font-size: 2.5rem;
   background-image: url(/images/header-bg.jpg);
   background-size: cover;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -69,7 +68,7 @@ header i.menu-btn {
 #showcase .showcase-text {
   margin-bottom: 0.5em;
   border: 0.4em solid #f7f3f3;
-  background-color: white;
+  background-color: #e4e4e4;
 }
 
 #showcase p.main-paragraph {
@@ -91,4 +90,122 @@ header i.menu-btn {
   font-size: 1rem;
   font-weight: 600;
 }
-/*# sourceMappingURL=style.css.map */
+
+#schedule {
+  background-color: #272a31;
+  padding: 3em 0.5em;
+}
+
+#schedule h3.underline-small {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5em;
+  color: white;
+}
+
+#schedule .underline-small::after {
+  content: '';
+  height: 0.15em;
+  width: 15%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 9%);
+  bottom: -5px;
+}
+
+#schedule .schedule-card {
+  display: -webkit-box;
+  display: flex;
+  padding: 0 0.5em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(87, 87, 87, 0.5);
+  margin: 0.8em 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 95%;
+}
+
+#schedule .schedule-card i {
+  color: #272a31;
+  font-size: 2rem;
+}
+
+#schedule .schedule-card h4 {
+  color: #ec5242;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#schedule .schedule-card p {
+  color: white;
+}
+
+#schedule .btn-schedule {
+  background-color: #ec5242;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  padding: 1.6em;
+}
+
+#schedule .btn-schedule:hover {
+  background-color: #f09186;
+}
+
+#artists .artists {
+  background-color: #d3d3d3;
+}
+
+#artists .artists h3.underline-small {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5em;
+  color: #272a31;
+}
+
+#artists .artists .underline-small::after {
+  content: '';
+  height: 0.15em;
+  width: 15%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 9%);
+  bottom: -5px;
+}
+
+#artists .artists .artist-description {
+  margin-left: 1em;
+}
+
+#artists .artists .artist {
+  max-width: 100%;
+  height: auto;
+}
+
+#artists .artists i {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: #ec5242;
+  padding-bottom: 0.5em;
+}
+
+#artists .artists i.underline-small2::after {
+  content: '';
+  height: 0.2em;
+  width: 50%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#artists .artists p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
