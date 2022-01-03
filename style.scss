@@ -5,3 +5,103 @@
   src: url(fonts/cocogoose-pro.regular.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  margin: 0.5em 1em;
+}
+
+// declaration of variables
+
+$primaryColor: #272a31;
+$secondaryColor: #d3d3d3;
+$headingColor: #ec5242;
+$headingSize: 2.5rem;
+$heading2Size: 1.5rem;
+$paragraphSize: 1rem;
+$iconSize: 0.6rem;
+$primaryFont: 'cocogoose', sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+
+body::before {
+  background: url(/images/homepage-bg2.jpg);
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.13;
+  filter: grayscale(100%);
+  
+}
+// navigation bar
+
+header {
+  display: flex;
+  justify-content: flex-start;
+
+  a.logo {
+    display: none;
+  }
+
+  i.menu-btn {
+    font-size: 4rem;
+  }
+}
+
+#showcase {
+  margin-top: 3rem;
+
+  q {
+    font-family: $secondaryFont;
+    color: $headingColor;
+    font-size: 1.5rem;
+
+  }
+
+  h1 {
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: $headingSize;
+    background-image: url(/images/header-bg.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+  }
+
+  .showcase-text {
+    margin-bottom: 0.5em;
+    border: 0.4em solid rgb(247, 243, 243);
+    background-color: rgb(255, 255, 255);
+  }
+
+  p.main-paragraph {
+    font-family: $secondaryFont;
+    font-size: $paragraphSize;
+    color: $primaryColor;
+    font-weight: 600;
+
+  }
+
+  span.showcase-slogan {
+    font-family: $primaryFont;
+    color: $primaryColor;
+    font-size: 1.2rem;
+  }
+
+  p.showcase-paragraph {
+    font-family: $secondaryFont;
+    color: $primaryColor;
+    font-size: 1rem;
+    font-weight: 600;
+
+  }
+}
+

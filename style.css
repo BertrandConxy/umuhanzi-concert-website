@@ -1,15 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 @font-face {
   font-family: 'cocogoose';
   src: url(fonts/cocogoose-pro.regular.ttf);
 }
 
-h1 {
-  color: red;
-  font-family: 'cocogoose', sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-h2 {
-  font-family: 'Lato', sans-serif;
+html {
+  font-size: 16px;
+  margin: 0.5em 1em;
 }
+
+body::before {
+  background: url(/images/homepage-bg2.jpg);
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.13;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header a.logo {
+  display: none;
+}
+
+header i.menu-btn {
+  font-size: 4rem;
+}
+
+#showcase {
+  margin-top: 3rem;
+}
+
+#showcase q {
+  font-family: "Lato", sans-serif;
+  color: #ec5242;
+  font-size: 1.5rem;
+}
+
+#showcase h1 {
+  font-family: "cocogoose", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background-image: url(/images/header-bg.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#showcase .showcase-text {
+  margin-bottom: 0.5em;
+  border: 0.4em solid #f7f3f3;
+  background-color: white;
+}
+
+#showcase p.main-paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #272a31;
+  font-weight: 600;
+}
+
+#showcase span.showcase-slogan {
+  font-family: "cocogoose", sans-serif;
+  color: #272a31;
+  font-size: 1.2rem;
+}
+
+#showcase p.showcase-paragraph {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
