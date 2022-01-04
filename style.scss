@@ -30,16 +30,66 @@ $containerBorder: rgb(247, 243, 243);
 // navigation bar
 
 header {
-  display: flex;
-  justify-content: flex-start;
-
-  a.logo {
-    display: none;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
 
   i.menu-btn {
     font-size: 4rem;
   }
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+
+  .nav-item {
+    font-family: $secondaryFont;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    .nav-link:hover {
+      color: $headingColor !important;
+    }
+
+    .nav-link:enabled,
+    :active {
+      color: $headingColor !important;
+    }
+
+    .btn-menu {
+      border: 2px solid $headingColor;
+      color: $headingColor !important;
+      padding: 0.9em;
+      font-size: 1rem;
+      font-family: $secondaryFont;
+      font-weight: bold;
+    }
+
+    .btn-menu:hover {
+      color: white !important;
+      background-color: $headingColor;
+    }
+
+    .btn-menu2 {
+      border: 2px solid $headingColor;
+      color: white !important;
+      background-color: $headingColor;
+      padding: 0.9em;
+      font-size: 1rem;
+      font-family: $secondaryFont;
+      font-weight: bold;
+    }
+
+    .btn-menu2:hover {
+      background-color: white;
+      color: $headingColor;
+    }
+  }
+}
+
+a.logo {
+  display: none;
 }
 // First section
 #showcase::before {
@@ -77,12 +127,13 @@ header {
   }
 
   .showcase-text {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     border: 0.4em solid $containerBorder;
     background-color: $containerBg;
   }
 
   p.main-paragraph {
+    text-align: center;
     font-family: $secondaryFont;
     font-size: $paragraphSize;
     color: $primaryColor;
@@ -96,6 +147,7 @@ header {
   }
 
   p.showcase-paragraph {
+    padding: 0.2em 0;
     font-family: $secondaryFont;
     color: $primaryColor;
     font-size: 1rem;
@@ -239,8 +291,6 @@ header {
 // footer
 
 footer {
-  background-color: $secondaryColor;
-
   a.logo {
     font-family: $primaryFont;
     font-size: 1.4rem;
@@ -255,6 +305,13 @@ footer {
     font-size: $iconSize;
     padding: 0.2em;
     color: $primaryColor;
+  }
+}
+
+#home-footer {
+  .logo,
+  i {
+    color: white;
   }
 }
 
@@ -316,7 +373,6 @@ footer {
     font-size: $paragraphSize;
     color: $primaryColor;
   }
-
 }
 
 #other-projects {
@@ -339,8 +395,10 @@ footer {
     left: calc(50% - 9%);
     bottom: -5px;
   }
+
   .project-img {
     position: relative;
+
     .overlay {
       background-color: $headingColor;
       opacity: 0.6;
@@ -351,9 +409,9 @@ footer {
       height: 100%;
     }
 
-    h3, span {
+    h3,
+    span {
       z-index: 1111;
-
     }
 
     h3 {
@@ -367,22 +425,20 @@ footer {
       font-size: 1.5rem;
       font-weight: bold;
     }
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
 
   .project-img:nth-child(1) {
-    
     background: url('images/iwacu-muzika2.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
     height: 400px;
     overflow: hidden;
     color: #f8f8f8;
-    
   }
 
   .project-img:nth-child(2) {
@@ -391,7 +447,7 @@ footer {
     max-width: 100%;
     height: 400px;
     overflow: hidden;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .project-img:nth-child(3) {
@@ -400,6 +456,80 @@ footer {
     max-width: 100%;
     height: 400px;
     overflow: hidden;
-    color: #FFFFFF;
+    color: #fff;
+  }
+}
+
+#about-footer {
+  .logo,
+  i {
+    color: $primaryColor;
+  }
+}
+
+// Media-querries for responsiveness
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 111;
+
+    i.menu-btn {
+      display: none;
+    }
+  }
+
+  nav {
+    position: static;
+    height: auto;
+
+    a.logo {
+      display: inline;
+      font-family: $primaryFont;
+      font-size: 1.5rem;
+    }
+
+    .md-orange {
+      color: $headingColor;
+      font-size: 2rem;
+    }
+  }
+
+  #showcase {
+    q {
+      font-size: 2rem;
+    }
+
+    h1 {
+      padding: 0.8em 0;
+      font-size: 3rem;
+    }
+
+    p.main-paragraph {
+      font-size: 1.5rem;
+    }
+
+    span.showcase-slogan {
+      font-size: 1.5rem;
+    }
+
+    p.showcase-paragraph {
+      font-size: 1.3rem;
+    }
+  }
+
+  #schedule {
+    .schedule-card {
+      flex-flow: column;
+      width: 30%;
+      justify-content: flex-start;
+      align-items: center;
+
+      i {
+        font-size: 4rem;
+      }
+    }
   }
 }

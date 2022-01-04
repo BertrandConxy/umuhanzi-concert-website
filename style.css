@@ -14,20 +14,66 @@ html {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-header a.logo {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 header i.menu-btn {
   font-size: 4rem;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+}
+
+nav .nav-item {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav .nav-item .nav-link:hover {
+  color: #ec5242 !important;
+}
+
+nav .nav-item .nav-link:enabled,
+nav .nav-item :active {
+  color: #ec5242 !important;
+}
+
+nav .nav-item .btn-menu {
+  border: 2px solid #ec5242;
+  color: #ec5242 !important;
+  padding: 0.9em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+nav .nav-item .btn-menu:hover {
+  color: white !important;
+  background-color: #ec5242;
+}
+
+nav .nav-item .btn-menu2 {
+  border: 2px solid #ec5242;
+  color: white !important;
+  background-color: #ec5242;
+  padding: 0.9em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+nav .nav-item .btn-menu2:hover {
+  background-color: white;
+  color: #ec5242;
+}
+
+a.logo {
+  display: none;
 }
 
 #showcase::before {
@@ -67,12 +113,13 @@ header i.menu-btn {
 }
 
 #showcase .showcase-text {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
   border: 0.4em solid #f7f3f3;
   background-color: #e4e4e4;
 }
 
 #showcase p.main-paragraph {
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #272a31;
@@ -86,6 +133,7 @@ header i.menu-btn {
 }
 
 #showcase p.showcase-paragraph {
+  padding: 0.2em 0;
   font-family: "Lato", sans-serif;
   color: #272a31;
   font-size: 1rem;
@@ -226,10 +274,6 @@ header i.menu-btn {
   color: white;
 }
 
-footer {
-  background-color: #d3d3d3;
-}
-
 footer a.logo {
   font-family: "cocogoose", sans-serif;
   font-size: 1.4rem;
@@ -244,6 +288,11 @@ footer i {
   font-size: 2rem;
   padding: 0.2em;
   color: #272a31;
+}
+
+#home-footer .logo,
+#home-footer i {
+  color: white;
 }
 
 #umuhanzi h3.underline-small {
@@ -351,7 +400,8 @@ footer i {
   height: 100%;
 }
 
-#other-projects .project-img h3, #other-projects .project-img span {
+#other-projects .project-img h3,
+#other-projects .project-img span {
   z-index: 1111;
 }
 
@@ -382,7 +432,7 @@ footer i {
   max-width: 100%;
   height: 400px;
   overflow: hidden;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 #other-projects .project-img:nth-child(3) {
@@ -391,6 +441,68 @@ footer i {
   max-width: 100%;
   height: 400px;
   overflow: hidden;
-  color: #FFFFFF;
+  color: #fff;
+}
+
+#about-footer .logo,
+#about-footer i {
+  color: #272a31;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 111;
+  }
+  header i.menu-btn {
+    display: none;
+  }
+  nav {
+    position: static;
+    height: auto;
+  }
+  nav a.logo {
+    display: inline;
+    font-family: "cocogoose", sans-serif;
+    font-size: 1.5rem;
+  }
+  nav .md-orange {
+    color: #ec5242;
+    font-size: 2rem;
+  }
+  #showcase q {
+    font-size: 2rem;
+  }
+  #showcase h1 {
+    padding: 0.8em 0;
+    font-size: 3rem;
+  }
+  #showcase p.main-paragraph {
+    font-size: 1.5rem;
+  }
+  #showcase span.showcase-slogan {
+    font-size: 1.5rem;
+  }
+  #showcase p.showcase-paragraph {
+    font-size: 1.3rem;
+  }
+  #schedule .schedule-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 30%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #schedule .schedule-card i {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
