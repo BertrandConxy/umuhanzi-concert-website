@@ -25,7 +25,6 @@ header i.menu-btn {
 
 nav {
   position: fixed;
-  height: 100vh;
 }
 
 nav .nav-item {
@@ -159,7 +158,7 @@ a.logo {
   width: 15%;
   background: #f24432;
   position: absolute;
-  left: calc(50% - 9%);
+  left: calc(50% - 8%);
   bottom: -5px;
 }
 
@@ -225,7 +224,7 @@ a.logo {
   width: 15%;
   background: #f24432;
   position: absolute;
-  left: calc(50% - 9%);
+  left: calc(50% - 8%);
   bottom: -5px;
 }
 
@@ -274,7 +273,7 @@ a.logo {
   color: white;
 }
 
-footer a.logo {
+footer a.logo-footer {
   font-family: "cocogoose", sans-serif;
   font-size: 1.4rem;
 }
@@ -501,8 +500,28 @@ footer i {
         -ms-flex-align: center;
             align-items: center;
   }
+  #schedule .schedule-card p {
+    text-align: center;
+  }
   #schedule .schedule-card i {
     font-size: 4rem;
+  }
+  #schedule .btn-schedule {
+    background-color: transparent;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    padding: 0;
+    text-decoration: underline;
+  }
+  #schedule .btn-schedule:hover {
+    background-color: transparent;
+  }
+  #artists .more-text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

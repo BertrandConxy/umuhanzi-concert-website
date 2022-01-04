@@ -41,7 +41,7 @@ header {
 
 nav {
   position: fixed;
-  height: 100vh;
+  // height: 100vh;
 
   .nav-item {
     font-family: $secondaryFont;
@@ -174,7 +174,7 @@ a.logo {
     width: 15%;
     background: #f24432;
     position: absolute;
-    left: calc(50% - 9%);
+    left: calc(50% - 8%);
     bottom: -5px;
   }
 
@@ -236,7 +236,7 @@ a.logo {
       width: 15%;
       background: #f24432;
       position: absolute;
-      left: calc(50% - 9%);
+      left: calc(50% - 8%);
       bottom: -5px;
     }
 
@@ -291,7 +291,7 @@ a.logo {
 // footer
 
 footer {
-  a.logo {
+  a.logo-footer {
     font-family: $primaryFont;
     font-size: 1.4rem;
   }
@@ -527,9 +527,33 @@ footer {
       justify-content: flex-start;
       align-items: center;
 
+      p {
+        text-align: center;
+      }
+
       i {
         font-size: 4rem;
       }
+    }
+
+    .btn-schedule {
+      background-color: transparent;
+      font-family: $secondaryFont;
+      font-size: 1.3rem;
+      padding: 0;
+      text-decoration: underline;
+    }
+  
+    .btn-schedule:hover {
+      background-color: transparent;
+    }
+  }
+
+  #artists {
+    .more-text {
+      display: flex!important;
+      flex-wrap: wrap!important;
+
     }
   }
 }
