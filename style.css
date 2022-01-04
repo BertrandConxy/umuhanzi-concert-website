@@ -294,6 +294,17 @@ footer i {
   color: white;
 }
 
+#umuhanzi {
+  border-bottom: 3px solid #d3d3d3;
+}
+
+#umuhanzi h1 {
+  font-family: "cocogoose", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #ec5242;
+}
+
 #umuhanzi h3.underline-small {
   text-transform: capitalize;
   text-align: center;
@@ -308,11 +319,12 @@ footer i {
   width: 15%;
   background: #f24432;
   position: absolute;
-  left: calc(50% - 9%);
+  left: calc(50% - 8%);
   bottom: -5px;
 }
 
 #festival {
+  border-bottom: 3px solid #d3d3d3;
   padding: 1.5em 0;
 }
 
@@ -341,7 +353,6 @@ footer i {
 #festival .showcase-text {
   margin-bottom: 0.5em;
   border: 0.4em solid #f7f3f3;
-  background-color: #e4e4e4;
 }
 
 #festival p.main-paragraph {
@@ -351,7 +362,7 @@ footer i {
 }
 
 #other-projects {
-  background-color: grey;
+  background-color: #d3d3d3;
 }
 
 #other-projects h3.underline-small {
@@ -368,7 +379,7 @@ footer i {
   width: 15%;
   background: #f24432;
   position: absolute;
-  left: calc(50% - 9%);
+  left: calc(50% - 8%);
   bottom: -5px;
 }
 
@@ -420,27 +431,63 @@ footer i {
   background: url("images/iwacu-muzika2.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   color: #f8f8f8;
+}
+
+#other-projects .project-img:nth-child(1):hover {
+  z-index: 111;
+}
+
+#other-projects .project-img:nth-child(1):hover .overlay {
+  display: none;
+}
+
+#other-projects .project-img:nth-child(1):hover h3, #other-projects .project-img:nth-child(1):hover span {
+  display: none;
 }
 
 #other-projects .project-img:nth-child(2) {
   background: url("images/kigali-fiesta.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   color: #fff;
+}
+
+#other-projects .project-img:nth-child(2):hover {
+  z-index: 111;
+}
+
+#other-projects .project-img:nth-child(2):hover .overlay {
+  display: none;
+}
+
+#other-projects .project-img:nth-child(2):hover h3, #other-projects .project-img:nth-child(2):hover span {
+  display: none;
 }
 
 #other-projects .project-img:nth-child(3) {
   background: url("images/homepage-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   color: #fff;
+}
+
+#other-projects .project-img:nth-child(3):hover {
+  z-index: 111;
+}
+
+#other-projects .project-img:nth-child(3):hover .overlay {
+  display: none;
+}
+
+#other-projects .project-img:nth-child(3):hover h3, #other-projects .project-img:nth-child(3):hover span {
+  display: none;
 }
 
 #about-footer .logo,
@@ -522,6 +569,24 @@ footer i {
     display: flex !important;
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+  }
+  #umuhanzi span {
+    font-size: 1.2rem;
+  }
+  #festival .showcase-text {
+    margin-bottom: 0.5em;
+    border: 0.4em solid #f7f3f3;
+  }
+  #festival p.main-paragraph {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    color: #272a31;
+  }
+  #other-projects {
+    padding: 0.8em 0;
+  }
+  #other-projects p {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
