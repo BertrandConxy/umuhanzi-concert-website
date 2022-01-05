@@ -15,14 +15,14 @@ closeMenu.addEventListener('click', () => {
 const artistProfile = [
   {
     names: 'Bruce Melody',
-    profile: '/images/Bruce.jpg',
+    profile: './images/Bruce.jpg',
     genre: 'R&B and pop',
     label: 'Igitangaza music records',
     recentWork: '10 years in music festival',
   },
   {
     names: 'B-Threy',
-    profile: '/images/B-threy.jpg',
+    profile: './images/B-threy.jpg',
     genre: 'Drill and trap',
     label: 'Ratio music records',
     recentWork: 'Umuuheto EP',
