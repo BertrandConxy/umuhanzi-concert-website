@@ -106,7 +106,7 @@ a.logo {
 }
 // First section
 #showcase::before {
-  background: url(./images/homepage-bg3.jpg);
+  background: url('./images/homepage-bg3.jpg');
   content: "";
   background-size: cover;
   position: absolute;
@@ -134,7 +134,7 @@ a.logo {
     font-family: $primaryFont;
     font-weight: bold;
     font-size: $headingSize;
-    background-image: url(/images/header-bg.jpg);
+    background-image: url('/images/header-bg.jpg');
     background-size: cover;
     -webkit-background-clip: text;
     color: transparent;
