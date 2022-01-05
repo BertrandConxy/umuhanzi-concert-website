@@ -66,8 +66,7 @@ nav {
       color: $headingColor !important;
     }
 
-    .nav-link:enabled,
-    :active {
+    .nav-link:active {
       color: $headingColor !important;
     }
 
@@ -315,19 +314,16 @@ footer {
     font-family: $secondaryFont;
     font-weight: bold;
   }
-
-  footer.i {
-    font-size: $iconSize;
-    padding: 0.2em;
-    color: $primaryColor;
-  }
 }
 
-#home-footer {
-  #home-footer.logo,
-  #home-footer.i {
-    color: white;
-  }
+#home-footer.logo,
+.icons {
+  color: white;
+}
+
+.icons {
+  font-size: $iconSize;
+  padding: 0.2em;
 }
 
 //  About page
@@ -342,7 +338,7 @@ footer {
     color: $headingColor;
   }
 
-  #umuhanzi.h3.underline-small {
+  .underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -350,7 +346,7 @@ footer {
     color: $primaryColor;
   }
 
-  #umuhanzi.underline-small::after {
+  .about-1.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -364,7 +360,7 @@ footer {
 #festival {
   border-bottom: 3px solid $secondaryColor;
 
-  #festival.h3.underline-small {
+  .about-2.underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -372,7 +368,7 @@ footer {
     color: $primaryColor;
   }
 
-  #festival.underline-small::after {
+  .about-2.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -384,7 +380,7 @@ footer {
 
   padding: 1.5em 0;
 
-  #festival.img {
+  .festiv-img {
     max-width: 100%;
   }
 
@@ -403,7 +399,11 @@ footer {
 #other-projects {
   background-color: $secondaryColor;
 
-  #other-projects.h3.underline-small {
+  .project-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .about-3.underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -411,7 +411,7 @@ footer {
     color: $primaryColor;
   }
 
-  #other-projects.underline-small::after {
+  .about-3.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -457,7 +457,7 @@ footer {
     flex-direction: column;
   }
 
-  #other-projects.project-img:nth-child(1) {
+  .project-img-1 {
     background: url('images/iwacu-muzika2.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -466,7 +466,7 @@ footer {
     color: #f8f8f8;
   }
 
-  #other-projects.project-img:nth-child(1):hover {
+  .project-img-1:hover {
     z-index: 111;
 
     .overlay {
@@ -479,7 +479,7 @@ footer {
     }
   }
 
-  .project-img:nth-child(2) {
+  .project-img-2 {
     background: url('images/kigali-fiesta.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -488,7 +488,7 @@ footer {
     color: #fff;
   }
 
-  #other-projects.project-img:nth-child(2):hover {
+  .project-img-2:hover {
     z-index: 111;
 
     .overlay {
@@ -501,7 +501,7 @@ footer {
     }
   }
 
-  .project-img:nth-child(3) {
+  .project-img-3 {
     background: url('images/homepage-bg.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -510,7 +510,7 @@ footer {
     color: #fff;
   }
 
-  #other-projects.project-img:nth-child(3):hover {
+  .project-img-3:hover {
     z-index: 111;
 
     .overlay {
@@ -524,11 +524,12 @@ footer {
   }
 }
 
-#about-footer {
-  .logo,
-  #about-footer.i {
-    color: $primaryColor;
-  }
+#about-footer.logo {
+  color: $primaryColor;
+}
+
+.icons-2 {
+  color: $primaryColor;
 }
 
 // Media-querries for responsiveness

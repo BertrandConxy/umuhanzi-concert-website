@@ -54,8 +54,7 @@ nav .nav-item .nav-link:hover {
   color: #ec5242 !important;
 }
 
-nav .nav-item .nav-link:enabled,
-nav .nav-item :active {
+nav .nav-item .nav-link:active {
   color: #ec5242 !important;
 }
 
@@ -300,15 +299,14 @@ footer span.footer-text {
   font-weight: bold;
 }
 
-footer footer.i {
-  font-size: 2rem;
-  padding: 0.2em;
-  color: #272a31;
+#home-footer.logo,
+.icons {
+  color: white;
 }
 
-#home-footer #home-footer.logo,
-#home-footer #home-footer.i {
-  color: white;
+.icons {
+  font-size: 2rem;
+  padding: 0.2em;
 }
 
 #umuhanzi {
@@ -322,7 +320,7 @@ footer footer.i {
   color: #ec5242;
 }
 
-#umuhanzi #umuhanzi.h3.underline-small {
+#umuhanzi .underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -330,7 +328,7 @@ footer footer.i {
   color: #272a31;
 }
 
-#umuhanzi #umuhanzi.underline-small::after {
+#umuhanzi .about-1.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -345,7 +343,7 @@ footer footer.i {
   padding: 1.5em 0;
 }
 
-#festival #festival.h3.underline-small {
+#festival .about-2.underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -353,7 +351,7 @@ footer footer.i {
   color: #272a31;
 }
 
-#festival #festival.underline-small::after {
+#festival .about-2.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -363,7 +361,7 @@ footer footer.i {
   bottom: -5px;
 }
 
-#festival #festival.img {
+#festival .festiv-img {
   max-width: 100%;
 }
 
@@ -382,7 +380,11 @@ footer footer.i {
   background-color: #d3d3d3;
 }
 
-#other-projects #other-projects.h3.underline-small {
+#other-projects .project-paragraph {
+  font-size: 1.2rem;
+}
+
+#other-projects .about-3.underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -390,7 +392,7 @@ footer footer.i {
   color: #272a31;
 }
 
-#other-projects #other-projects.underline-small::after {
+#other-projects .about-3.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -443,7 +445,7 @@ footer footer.i {
   font-weight: bold;
 }
 
-#other-projects #other-projects.project-img:nth-child(1) {
+#other-projects .project-img-1 {
   background: url("images/iwacu-muzika2.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -452,20 +454,20 @@ footer footer.i {
   color: #f8f8f8;
 }
 
-#other-projects #other-projects.project-img:nth-child(1):hover {
+#other-projects .project-img-1:hover {
   z-index: 111;
 }
 
-#other-projects #other-projects.project-img:nth-child(1):hover .overlay {
+#other-projects .project-img-1:hover .overlay {
   display: none;
 }
 
-#other-projects #other-projects.project-img:nth-child(1):hover h3,
-#other-projects #other-projects.project-img:nth-child(1):hover span {
+#other-projects .project-img-1:hover h3,
+#other-projects .project-img-1:hover span {
   display: none;
 }
 
-#other-projects .project-img:nth-child(2) {
+#other-projects .project-img-2 {
   background: url("images/kigali-fiesta.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -474,20 +476,20 @@ footer footer.i {
   color: #fff;
 }
 
-#other-projects #other-projects.project-img:nth-child(2):hover {
+#other-projects .project-img-2:hover {
   z-index: 111;
 }
 
-#other-projects #other-projects.project-img:nth-child(2):hover .overlay {
+#other-projects .project-img-2:hover .overlay {
   display: none;
 }
 
-#other-projects #other-projects.project-img:nth-child(2):hover h3,
-#other-projects #other-projects.project-img:nth-child(2):hover span {
+#other-projects .project-img-2:hover h3,
+#other-projects .project-img-2:hover span {
   display: none;
 }
 
-#other-projects .project-img:nth-child(3) {
+#other-projects .project-img-3 {
   background: url("images/homepage-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -496,21 +498,24 @@ footer footer.i {
   color: #fff;
 }
 
-#other-projects #other-projects.project-img:nth-child(3):hover {
+#other-projects .project-img-3:hover {
   z-index: 111;
 }
 
-#other-projects #other-projects.project-img:nth-child(3):hover .overlay {
+#other-projects .project-img-3:hover .overlay {
   display: none;
 }
 
-#other-projects #other-projects.project-img:nth-child(3):hover h3,
-#other-projects #other-projects.project-img:nth-child(3):hover span {
+#other-projects .project-img-3:hover h3,
+#other-projects .project-img-3:hover span {
   display: none;
 }
 
-#about-footer .logo,
-#about-footer #about-footer.i {
+#about-footer.logo {
+  color: #272a31;
+}
+
+.icons-2 {
   color: #272a31;
 }
 
