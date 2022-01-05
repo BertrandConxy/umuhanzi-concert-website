@@ -15,7 +15,7 @@ closeMenu.addEventListener('click', () => {
 const artistProfile = [
   {
     names: 'Bruce Melody',
-    profile: 'images/Bruce.jpg',
+    profile: './images/Bruce.jpg',
     genre: 'R&B and pop',
     label: 'Igitangaza music records',
     recentWork: '10 years in music festival',
@@ -65,7 +65,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
   <div class="container p-0 ">
       <div class="row  d-flex">
           <div class="col-sm-3 col-lg-6 d-flex py-4">
-              <div class="container w-50 h-75 p-0"><img src="/images/Bruce.jpg" alt="photo of bruce melody" class="artist"></div>
+              <div class="container w-50 h-75 p-0"><img src="${artistProfile[0].profile}" alt="photo of bruce melody" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4>${artistProfile[0].names}</h4>
                   <i class="underline-small2">Itahiwacu Bruce, who owns ${artistProfile[0].label}.
