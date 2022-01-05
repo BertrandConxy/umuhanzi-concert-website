@@ -15,7 +15,7 @@ closeMenu.addEventListener('click', () => {
 const artistProfile = [
   {
     names: 'Bruce Melody',
-    profile: './images/Bruce.jpg',
+    profile: 'images/Bruce.jpg',
     genre: 'R&B and pop',
     label: 'Igitangaza music records',
     recentWork: '10 years in music festival',
