@@ -128,7 +128,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
           </div>
       </div>
           <div class="container d-flex justify-content-center d-lg-none">
-              <button class="btn btn-outline-secondary btn-more w-100" >MORE <img src="/images/angle-down-solid.svg" alt=" "></button>
+              <button class="btn btn-outline-secondary btn-more w-100" >MORE <img src="./images/angle-down-solid.svg" alt=" "></button>
           </div>
       
       </div>
@@ -142,8 +142,8 @@ const moreArtists = document.querySelector('.more-text');
 moreButton.addEventListener('click', () => {
   moreArtists.classList.toggle('show');
   if (moreButton.innerHTML === 'MORE <img src="/images/angle-down-solid.svg" alt=" ">') {
-    moreButton.innerHTML = 'LESS <img src="/images/angle-up-solid.svg" alt=" ">';
+    moreButton.innerHTML = 'LESS <img src="./images/angle-up-solid.svg" alt=" ">';
   } else {
-    moreButton.innerHTML = 'MORE <img src="/images/angle-down-solid.svg" alt=" ">';
+    moreButton.innerHTML = 'MORE <img src="./images/angle-down-solid.svg" alt=" ">';
   }
 });
