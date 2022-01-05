@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 @font-face {
   font-family: 'cocogoose';
   src: url(fonts/cocogoose-pro.regular.ttf);
@@ -6,7 +7,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -14,17 +15,33 @@ html {
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 2%;
+  left: 2%;
 }
 
 header i.menu-btn {
-  font-size: 4rem;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 nav {
-  position: fixed;
+  position: fixed !important;
+  width: 100vw;
+  top: 0;
+  left: -100000px;
+  -webkit-transition: all 3s 0ms ease-in-out;
+  transition: all 3s 0ms ease-in-out;
+  height: 100vh;
+}
+
+nav i.close-btn {
+  font-size: 2.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2em 0.3em;
 }
 
 nav .nav-item {
@@ -87,12 +104,13 @@ a.logo {
   opacity: 0.15;
   z-index: -1;
   -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 
 #showcase {
-  margin-top: 3rem;
-  height: 79vh;
+  margin-top: 2rem;
+  margin-bottom: 1.7em;
+  height: 80vh;
 }
 
 #showcase q {
@@ -112,7 +130,7 @@ a.logo {
 }
 
 #showcase .showcase-text {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.9em;
   border: 0.4em solid #f7f3f3;
   background-color: #e4e4e4;
 }
@@ -132,7 +150,7 @@ a.logo {
 }
 
 #showcase p.showcase-paragraph {
-  padding: 0.2em 0;
+  padding: 0.9em 0;
   font-family: "Lato", sans-serif;
   color: #272a31;
   font-size: 1rem;
@@ -164,18 +182,17 @@ a.logo {
 
 #schedule .schedule-card {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 0.5em;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 8px;
   background-color: rgba(87, 87, 87, 0.5);
   margin: 0.8em 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 95%;
 }
 
@@ -283,14 +300,14 @@ footer span.footer-text {
   font-weight: bold;
 }
 
-footer i {
+footer footer.i {
   font-size: 2rem;
   padding: 0.2em;
   color: #272a31;
 }
 
-#home-footer .logo,
-#home-footer i {
+#home-footer #home-footer.logo,
+#home-footer #home-footer.i {
   color: white;
 }
 
@@ -305,7 +322,7 @@ footer i {
   color: #ec5242;
 }
 
-#umuhanzi h3.underline-small {
+#umuhanzi #umuhanzi.h3.underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -313,7 +330,7 @@ footer i {
   color: #272a31;
 }
 
-#umuhanzi .underline-small::after {
+#umuhanzi #umuhanzi.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -328,7 +345,7 @@ footer i {
   padding: 1.5em 0;
 }
 
-#festival h3.underline-small {
+#festival #festival.h3.underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -336,7 +353,7 @@ footer i {
   color: #272a31;
 }
 
-#festival .underline-small::after {
+#festival #festival.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -346,7 +363,7 @@ footer i {
   bottom: -5px;
 }
 
-#festival img {
+#festival #festival.img {
   max-width: 100%;
 }
 
@@ -365,7 +382,7 @@ footer i {
   background-color: #d3d3d3;
 }
 
-#other-projects h3.underline-small {
+#other-projects #other-projects.h3.underline-small {
   text-transform: capitalize;
   text-align: center;
   position: relative;
@@ -373,7 +390,7 @@ footer i {
   color: #272a31;
 }
 
-#other-projects .underline-small::after {
+#other-projects #other-projects.underline-small::after {
   content: '';
   height: 0.15em;
   width: 15%;
@@ -386,18 +403,17 @@ footer i {
 #other-projects .project-img {
   position: relative;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #other-projects .project-img .overlay {
@@ -427,7 +443,7 @@ footer i {
   font-weight: bold;
 }
 
-#other-projects .project-img:nth-child(1) {
+#other-projects #other-projects.project-img:nth-child(1) {
   background: url("images/iwacu-muzika2.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -436,15 +452,16 @@ footer i {
   color: #f8f8f8;
 }
 
-#other-projects .project-img:nth-child(1):hover {
+#other-projects #other-projects.project-img:nth-child(1):hover {
   z-index: 111;
 }
 
-#other-projects .project-img:nth-child(1):hover .overlay {
+#other-projects #other-projects.project-img:nth-child(1):hover .overlay {
   display: none;
 }
 
-#other-projects .project-img:nth-child(1):hover h3, #other-projects .project-img:nth-child(1):hover span {
+#other-projects #other-projects.project-img:nth-child(1):hover h3,
+#other-projects #other-projects.project-img:nth-child(1):hover span {
   display: none;
 }
 
@@ -457,15 +474,16 @@ footer i {
   color: #fff;
 }
 
-#other-projects .project-img:nth-child(2):hover {
+#other-projects #other-projects.project-img:nth-child(2):hover {
   z-index: 111;
 }
 
-#other-projects .project-img:nth-child(2):hover .overlay {
+#other-projects #other-projects.project-img:nth-child(2):hover .overlay {
   display: none;
 }
 
-#other-projects .project-img:nth-child(2):hover h3, #other-projects .project-img:nth-child(2):hover span {
+#other-projects #other-projects.project-img:nth-child(2):hover h3,
+#other-projects #other-projects.project-img:nth-child(2):hover span {
   display: none;
 }
 
@@ -478,20 +496,21 @@ footer i {
   color: #fff;
 }
 
-#other-projects .project-img:nth-child(3):hover {
+#other-projects #other-projects.project-img:nth-child(3):hover {
   z-index: 111;
 }
 
-#other-projects .project-img:nth-child(3):hover .overlay {
+#other-projects #other-projects.project-img:nth-child(3):hover .overlay {
   display: none;
 }
 
-#other-projects .project-img:nth-child(3):hover h3, #other-projects .project-img:nth-child(3):hover span {
+#other-projects #other-projects.project-img:nth-child(3):hover h3,
+#other-projects #other-projects.project-img:nth-child(3):hover span {
   display: none;
 }
 
 #about-footer .logo,
-#about-footer i {
+#about-footer #about-footer.i {
   color: #272a31;
 }
 
@@ -502,57 +521,81 @@ footer i {
     left: 0;
     z-index: 111;
   }
+
   header i.menu-btn {
     display: none;
   }
+
   nav {
-    position: static;
+    position: relative !important;
+    left: 0;
     height: auto;
+    -webkit-transition: none;
+    transition: none;
   }
+
+  nav i.close-btn {
+    display: none;
+  }
+
   nav a.logo {
     display: inline;
     font-family: "cocogoose", sans-serif;
     font-size: 1.5rem;
   }
+
   nav .md-orange {
     color: #ec5242;
     font-size: 2rem;
   }
+
+  #showcase {
+    height: 73vh;
+  }
+
   #showcase q {
     font-size: 2rem;
   }
+
   #showcase h1 {
     padding: 0.8em 0;
     font-size: 3rem;
   }
+
   #showcase p.main-paragraph {
     font-size: 1.5rem;
   }
+
   #showcase span.showcase-slogan {
     font-size: 1.5rem;
   }
+
   #showcase p.showcase-paragraph {
     font-size: 1.3rem;
   }
+
   #schedule .schedule-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
     width: 30%;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   #schedule .schedule-card p {
     text-align: center;
   }
+
   #schedule .schedule-card i {
     font-size: 4rem;
   }
+
   #schedule .btn-schedule {
     background-color: transparent;
     font-family: "Lato", sans-serif;
@@ -560,33 +603,38 @@ footer i {
     padding: 0;
     text-decoration: underline;
   }
+
   #schedule .btn-schedule:hover {
     background-color: transparent;
   }
+
   #artists .more-text {
     display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
   }
+
   #umuhanzi span {
     font-size: 1.2rem;
   }
+
   #festival .showcase-text {
     margin-bottom: 0.5em;
     border: 0.4em solid #f7f3f3;
   }
+
   #festival p.main-paragraph {
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     color: #272a31;
   }
+
   #other-projects {
     padding: 0.8em 0;
   }
-  #other-projects p {
+
+  #other-projects #other-projects.p {
     font-size: 1.5rem;
   }
 }
-/*# sourceMappingURL=style.css.map */

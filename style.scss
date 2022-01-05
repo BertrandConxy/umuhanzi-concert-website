@@ -30,18 +30,32 @@ $containerBorder: rgb(247, 243, 243);
 // navigation bar
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 2%;
+  left: 2%;
 
   i.menu-btn {
-    font-size: 4rem;
+    font-size: 3rem;
+    cursor: pointer;
   }
 }
 
 nav {
-  position: fixed;
-  // height: 100vh;
+  position: fixed !important;
+  width: 100vw;
+  top: 0;
+  left: -100000px;
+  transition: all 3s 0ms ease-in-out;
+  height: 100vh;
+
+  i.close-btn {
+    font-size: 2.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2em 0.3em;
+  }
 
   .nav-item {
     font-family: $secondaryFont;
@@ -107,8 +121,9 @@ a.logo {
 }
 
 #showcase {
-  margin-top: 3rem;
-  height: 79vh;
+  margin-top: 2rem;
+  margin-bottom: 1.7em;
+  height: 80vh;
 
   q {
     font-family: $secondaryFont;
@@ -127,7 +142,7 @@ a.logo {
   }
 
   .showcase-text {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.9em;
     border: 0.4em solid $containerBorder;
     background-color: $containerBg;
   }
@@ -147,7 +162,7 @@ a.logo {
   }
 
   p.showcase-paragraph {
-    padding: 0.2em 0;
+    padding: 0.9em 0;
     font-family: $secondaryFont;
     color: $primaryColor;
     font-size: 1rem;
@@ -301,7 +316,7 @@ footer {
     font-weight: bold;
   }
 
-  i {
+  footer.i {
     font-size: $iconSize;
     padding: 0.2em;
     color: $primaryColor;
@@ -309,8 +324,8 @@ footer {
 }
 
 #home-footer {
-  .logo,
-  i {
+  #home-footer.logo,
+  #home-footer.i {
     color: white;
   }
 }
@@ -319,13 +334,15 @@ footer {
 
 #umuhanzi {
   border-bottom: 3px solid $secondaryColor;
+
   h1 {
     font-family: $primaryFont;
     font-weight: bold;
     font-size: $headingSize;
     color: $headingColor;
   }
-  h3.underline-small {
+
+  #umuhanzi.h3.underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -333,7 +350,7 @@ footer {
     color: $primaryColor;
   }
 
-  .underline-small::after {
+  #umuhanzi.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -342,12 +359,12 @@ footer {
     left: calc(50% - 8%);
     bottom: -5px;
   }
-
 }
 
 #festival {
   border-bottom: 3px solid $secondaryColor;
-  h3.underline-small {
+
+  #festival.h3.underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -355,7 +372,7 @@ footer {
     color: $primaryColor;
   }
 
-  .underline-small::after {
+  #festival.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -367,14 +384,13 @@ footer {
 
   padding: 1.5em 0;
 
-  img {
+  #festival.img {
     max-width: 100%;
   }
 
   .showcase-text {
     margin-bottom: 0.5em;
     border: 0.4em solid $containerBorder;
-    
   }
 
   p.main-paragraph {
@@ -387,8 +403,7 @@ footer {
 #other-projects {
   background-color: $secondaryColor;
 
-
-  h3.underline-small {
+  #other-projects.h3.underline-small {
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -396,7 +411,7 @@ footer {
     color: $primaryColor;
   }
 
-  .underline-small::after {
+  #other-projects.underline-small::after {
     content: '';
     height: 0.15em;
     width: 15%;
@@ -408,6 +423,7 @@ footer {
 
   .project-img {
     position: relative;
+
     .overlay {
       background-color: $headingColor;
       opacity: 0.6;
@@ -441,7 +457,7 @@ footer {
     flex-direction: column;
   }
 
-  .project-img:nth-child(1) {
+  #other-projects.project-img:nth-child(1) {
     background: url('images/iwacu-muzika2.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -450,15 +466,19 @@ footer {
     color: #f8f8f8;
   }
 
-  .project-img:nth-child(1):hover {
+  #other-projects.project-img:nth-child(1):hover {
     z-index: 111;
+
     .overlay {
       display: none;
     }
-    h3, span {
+
+    h3,
+    span {
       display: none;
     }
   }
+
   .project-img:nth-child(2) {
     background: url('images/kigali-fiesta.jpg') 0 0 no-repeat;
     background-size: cover;
@@ -468,12 +488,15 @@ footer {
     color: #fff;
   }
 
-  .project-img:nth-child(2):hover {
+  #other-projects.project-img:nth-child(2):hover {
     z-index: 111;
+
     .overlay {
       display: none;
     }
-    h3, span {
+
+    h3,
+    span {
       display: none;
     }
   }
@@ -487,12 +510,15 @@ footer {
     color: #fff;
   }
 
-  .project-img:nth-child(3):hover {
+  #other-projects.project-img:nth-child(3):hover {
     z-index: 111;
+
     .overlay {
       display: none;
     }
-    h3, span {
+
+    h3,
+    span {
       display: none;
     }
   }
@@ -500,7 +526,7 @@ footer {
 
 #about-footer {
   .logo,
-  i {
+  #about-footer.i {
     color: $primaryColor;
   }
 }
@@ -520,8 +546,14 @@ footer {
   }
 
   nav {
-    position: static;
+    position: relative !important;
+    left: 0;
     height: auto;
+    transition: none;
+
+    i.close-btn {
+      display: none;
+    }
 
     a.logo {
       display: inline;
@@ -536,6 +568,8 @@ footer {
   }
 
   #showcase {
+    height: 73vh;
+
     q {
       font-size: 2rem;
     }
@@ -581,7 +615,7 @@ footer {
       padding: 0;
       text-decoration: underline;
     }
-  
+
     .btn-schedule:hover {
       background-color: transparent;
     }
@@ -589,14 +623,12 @@ footer {
 
   #artists {
     .more-text {
-      display: flex!important;
-      flex-wrap: wrap!important;
-
+      display: flex !important;
+      flex-wrap: wrap !important;
     }
   }
 
   #umuhanzi {
-
     span {
       font-size: 1.2rem;
     }
@@ -607,7 +639,7 @@ footer {
       margin-bottom: 0.5em;
       border: 0.4em solid $containerBorder;
     }
-  
+
     p.main-paragraph {
       font-family: $secondaryFont;
       font-size: 1.5rem;
@@ -617,7 +649,8 @@ footer {
 
   #other-projects {
     padding: 0.8em 0;
-    p {
+
+    #other-projects.p {
       font-size: 1.5rem;
     }
   }
