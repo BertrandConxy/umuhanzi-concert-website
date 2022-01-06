@@ -40,6 +40,9 @@ There are no other dependencies or installations required.
 This project is still under development.
 
 ## Screenshoot
+![Screenshot (75)](https://user-images.githubusercontent.com/90222110/148367214-7600fc86-ec8d-4464-a854-1b270ef8f3e4.png)
+
+![Screenshot (76)](https://user-images.githubusercontent.com/90222110/148367090-11705853-be44-4c45-9940-bcedf5949663.png)
 
 
 ## Live Demo link
