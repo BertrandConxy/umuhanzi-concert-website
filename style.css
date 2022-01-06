@@ -25,6 +25,13 @@ header i.menu-btn {
   cursor: pointer;
 }
 
+header .header-bar {
+  background-color: #272a31;
+  color: white;
+  font-size: 0.8rem;
+  display: none;
+}
+
 nav {
   position: fixed !important;
   width: 100vw;
@@ -129,7 +136,7 @@ a.logo {
 }
 
 #showcase .showcase-text {
-  margin-bottom: 0.9em;
+  margin-bottom: 0.7em;
   border: 0.4em solid #f7f3f3;
   background-color: #e4e4e4;
 }
@@ -309,10 +316,6 @@ footer span.footer-text {
   padding: 0.2em;
 }
 
-#umuhanzi {
-  border-bottom: 3px solid #d3d3d3;
-}
-
 #umuhanzi h1 {
   font-family: "cocogoose", sans-serif;
   font-weight: bold;
@@ -404,6 +407,7 @@ footer span.footer-text {
 
 #other-projects .project-img {
   position: relative;
+  width: 500px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -468,7 +472,7 @@ footer span.footer-text {
 }
 
 #other-projects .project-img-2 {
-  background: url("images/kigali-fiesta.jpg") 0 0 no-repeat;
+  background: url("images/homepage-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   max-width: 100%;
   height: 350px;
@@ -489,28 +493,6 @@ footer span.footer-text {
   display: none;
 }
 
-#other-projects .project-img-3 {
-  background: url("images/homepage-bg.jpg") 0 0 no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  height: 350px;
-  overflow: hidden;
-  color: #fff;
-}
-
-#other-projects .project-img-3:hover {
-  z-index: 111;
-}
-
-#other-projects .project-img-3:hover .overlay {
-  display: none;
-}
-
-#other-projects .project-img-3:hover h3,
-#other-projects .project-img-3:hover span {
-  display: none;
-}
-
 #about-footer.logo {
   color: #272a31;
 }
@@ -521,14 +503,38 @@ footer span.footer-text {
 
 @media only screen and (min-width: 768px) {
   header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 111;
+    height: 25px;
   }
 
   header i.menu-btn {
     display: none;
+  }
+
+  header .header-bar {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: inherit;
+    padding: 0.2em 6em;
+  }
+
+  header .header-bar a {
+    color: white;
+    margin: 0 0.6em;
+  }
+
+  header .log-out {
+    text-decoration: none;
+  }
+
+  header h6 {
+    margin: 0 0.5em;
   }
 
   nav {
@@ -555,7 +561,7 @@ footer span.footer-text {
   }
 
   #showcase {
-    height: 73vh;
+    height: 70vh;
   }
 
   #showcase q {
@@ -563,7 +569,7 @@ footer span.footer-text {
   }
 
   #showcase h1 {
-    padding: 0.8em 0;
+    padding: 0.7em 0;
     font-size: 3rem;
   }
 
@@ -572,11 +578,11 @@ footer span.footer-text {
   }
 
   #showcase span.showcase-slogan {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #showcase p.showcase-paragraph {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   #schedule .schedule-card {

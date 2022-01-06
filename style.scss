@@ -38,6 +38,13 @@ header {
     font-size: 3rem;
     cursor: pointer;
   }
+
+  .header-bar {
+    background-color: $primaryColor;
+    color: white;
+    font-size: 0.8rem;
+    display: none;
+  }
 }
 
 nav {
@@ -141,7 +148,7 @@ a.logo {
   }
 
   .showcase-text {
-    margin-bottom: 0.9em;
+    margin-bottom: 0.7em;
     border: 0.4em solid $containerBorder;
     background-color: $containerBg;
   }
@@ -329,8 +336,6 @@ footer {
 //  About page
 
 #umuhanzi {
-  border-bottom: 3px solid $secondaryColor;
-
   h1 {
     font-family: $primaryFont;
     font-weight: bold;
@@ -423,6 +428,7 @@ footer {
 
   .project-img {
     position: relative;
+    width: 500px;
 
     .overlay {
       background-color: $headingColor;
@@ -480,28 +486,6 @@ footer {
   }
 
   .project-img-2 {
-    background: url('images/kigali-fiesta.jpg') 0 0 no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: 350px;
-    overflow: hidden;
-    color: #fff;
-  }
-
-  .project-img-2:hover {
-    z-index: 111;
-
-    .overlay {
-      display: none;
-    }
-
-    h3,
-    span {
-      display: none;
-    }
-  }
-
-  .project-img-3 {
     background: url('images/homepage-bg.jpg') 0 0 no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -510,7 +494,7 @@ footer {
     color: #fff;
   }
 
-  .project-img-3:hover {
+  .project-img-2:hover {
     z-index: 111;
 
     .overlay {
@@ -536,13 +520,34 @@ footer {
 
 @media only screen and (min-width: 768px) {
   header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 111;
+    height: 25px;
 
     i.menu-btn {
       display: none;
+    }
+
+    .header-bar {
+      display: flex;
+      justify-content: flex-end;
+      height: inherit;
+      padding: 0.2em 6em;
+    }
+
+    .header-bar a {
+      color: white;
+      margin: 0 0.6em;
+    }
+
+    .log-out {
+      text-decoration: none;
+    }
+
+    h6 {
+      margin: 0 0.5em;
     }
   }
 
@@ -569,14 +574,14 @@ footer {
   }
 
   #showcase {
-    height: 73vh;
+    height: 70vh;
 
     q {
       font-size: 2rem;
     }
 
     h1 {
-      padding: 0.8em 0;
+      padding: 0.7em 0;
       font-size: 3rem;
     }
 
@@ -585,11 +590,11 @@ footer {
     }
 
     span.showcase-slogan {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     p.showcase-paragraph {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
 
