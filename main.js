@@ -64,7 +64,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
 <h3 class="underline-small">Featured artists</h3>
   <div class="container p-0 ">
       <div class="row  d-flex">
-          <div class="col-sm-3 col-lg-6 d-flex py-4">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-4">
               <div class="container w-50 h-75 p-0"><img src="${artistProfile[0].profile}" alt="photo of bruce melody" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4>${artistProfile[0].names}</h4>
@@ -75,7 +75,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
               </div>
           </div>
           
-          <div class="col-sm-3 col-lg-6 d-flex py-4">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-4">
               <div class="container w-50 h-75 p-0"><img src="${artistProfile[1].profile}" alt="photo of B-threy" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4>${artistProfile[1].names}</h4>
@@ -86,7 +86,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
               </div>
           </div>
           <div class="more-text ">
-          <div class="col-sm-3 col-lg-6 d-flex py-4">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-4">
               <div class="container w-50 h-75 p-0"><img src="${artistProfile[2].profile} " alt="Ariel ways" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4> ${artistProfile[2].names} </h4>
@@ -96,7 +96,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
                       She is well known in R&B love songs.Recently dropped ${artistProfile[2].recentWork}  and it is trending.</p>
               </div>
           </div>
-          <div class="col-sm-3 col-lg-6 d-flex py-4">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-4">
               <div class="container w-50 h-75 p-0"><img src=" ${artistProfile[3].profile} " alt="Ish-kevin" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4>${artistProfile[3].names} </h4>
@@ -106,7 +106,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
                       He has recently ${artistProfile[3].recentWork}.</p>
               </div>
           </div>
-          <div class="col-sm-3 col-lg-6 d-flex py-5">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-5">
               <div class="container w-50 h-75 p-0"><img src="${artistProfile[4].profile}" alt="photo of Juno Kizigenza" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4> ${artistProfile[4].names} </h4>
@@ -116,7 +116,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
                       He has recently dropped ${artistProfile[4].recentWork} </p>
               </div>
           </div>
-          <div class="col-sm-3 col-lg-6 d-flex py-4">
+          <div class="col-sm-3 col-lg-6 col-md-6 d-flex py-4">
               <div class="container w-50 h-75 p-0"><img src="${artistProfile[5].profile}" alt="photo of Platini P" class="artist"></div>
               <div class="container p-0 artist-description">
                   <h4>${artistProfile[5].names}</h4>
@@ -128,7 +128,7 @@ artistSection.innerHTML += `<div class="container-fluid artists py-4">
           </div>
       </div>
           <div class="container d-flex justify-content-center d-lg-none">
-              <button class="btn btn-outline-secondary btn-more w-100" >MORE <img src="./images/angle-down-solid.svg" alt=" "></button>
+              <button class="btn btn-outline-secondary btn-more w-100 d-sm-none" >MORE <img src="./images/angle-down-solid.svg" alt=" "></button>
           </div>
       
       </div>

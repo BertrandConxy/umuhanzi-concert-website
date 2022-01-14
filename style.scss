@@ -113,13 +113,14 @@ a.logo {
 }
 // First section
 #showcase::before {
-  background: url('./images/homepage-bg3.jpg');
+  background: url('./images/homepage-bg3.jpg') no-repeat center;
   content: "";
   background-size: cover;
+  padding-top: 90px;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   opacity: 0.15;
   z-index: -1;
@@ -129,7 +130,7 @@ a.logo {
 #showcase {
   margin-top: 2rem;
   margin-bottom: 1.7em;
-  height: 80vh;
+  height: 100vh;
 
   q {
     font-family: $secondaryFont;
@@ -573,8 +574,12 @@ footer {
     }
   }
 
+  #showcase::before {
+    bottom: -150px;
+  }
+
   #showcase {
-    height: 70vh;
+    height: 92vh;
 
     q {
       font-size: 2rem;
@@ -632,6 +637,10 @@ footer {
       display: flex !important;
       flex-wrap: wrap !important;
     }
+
+    .btn-menu {
+      display: none;
+    }
   }
 
   #umuhanzi {
@@ -659,5 +668,17 @@ footer {
     #other-projects.p {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  html {
+    font-size: 18px;
   }
 }
