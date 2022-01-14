@@ -65,6 +65,10 @@ nav .nav-item .nav-link:active {
   color: #ec5242 !important;
 }
 
+nav .nav-item .nav-link:focus {
+  color: #ec5242 !important;
+}
+
 nav .nav-item .btn-menu {
   border: 2px solid #ec5242;
   color: #ec5242 !important;

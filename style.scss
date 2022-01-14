@@ -77,6 +77,10 @@ nav {
       color: $headingColor !important;
     }
 
+    .nav-link:focus {
+      color: $headingColor !important;
+    }
+
     .btn-menu {
       border: 2px solid $headingColor;
       color: $headingColor !important;
@@ -679,6 +683,6 @@ footer {
 
 @media screen and (min-width: 1020px) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
