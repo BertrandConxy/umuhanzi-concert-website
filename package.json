@@ -1,0 +1,19 @@
+{
+  "name": "cccc",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/ConcertWebsite-orange)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BertrandConxy/umuhanzi-concert-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BertrandConxy/umuhanzi-concert-website/issues"
+  },
+  "homepage": "https://github.com/BertrandConxy/umuhanzi-concert-website#readme"
+}

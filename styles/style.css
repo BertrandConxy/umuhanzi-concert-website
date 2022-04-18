@@ -36,10 +36,14 @@ nav {
   position: fixed !important;
   width: 100vw;
   top: 0;
-  left: -100000px;
-  -webkit-transition: all 3s 0ms ease-in-out;
-  transition: all 3s 0ms ease-in-out;
+  left: -111%;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
   height: 100vh;
+}
+
+nav.active {
+  left: 0
 }
 
 nav i.close-btn {
@@ -103,7 +107,7 @@ a.logo {
 }
 
 #showcase::before {
-  background: url("./images/homepage-bg3.jpg") no-repeat center;
+  background: url("../images/homepage-bg3.jpg") no-repeat center;
   content: "";
   background-size: cover;
   padding-top: 90px;
@@ -134,7 +138,7 @@ a.logo {
   font-family: "cocogoose", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
-  background-image: url("./images/header-bg.jpg");
+  background-image: url("../images/header-bg.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;

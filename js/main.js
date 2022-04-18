@@ -5,11 +5,11 @@ const closeMenu = document.querySelector('.close-btn');
 const navBar = document.querySelector('nav');
 
 openMenu.addEventListener('click', () => {
-  navBar.style.left = '0px';
+  navBar.classList.add('active');
 });
 
 closeMenu.addEventListener('click', () => {
-  navBar.style.left = '-100000px';
+  navBar.classList.remove('active');
 });
 
 const artistProfile = [
